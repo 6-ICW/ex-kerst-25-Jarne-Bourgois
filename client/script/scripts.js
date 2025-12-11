@@ -1,4 +1,6 @@
 // vraag 1
+
+// een textbox met id text?? 
 const text = document.querySelector("#text");
 const password = document.querySelector("#password");
 const btnlogin = document.querySelector("#btnlogin");
@@ -26,6 +28,8 @@ btnlogin.addEventListener("click", (e) => {
   fetch("https://ex-kerst-2025.onrender.com/user/", options)
     .then((result) => result.json())
     .then((data) => {
+      // Je krijgt een resultaat terug maar print het enkel uit. 
+      // wellicht door het refreshen van je pagina
       console.log(data);
     });
 });
